@@ -1,0 +1,37 @@
+{%extends 'blog/base.html'%}
+
+{%block title%}
+  Share Post by email
+{%endblock%}
+
+{%block content%}
+{%if sent%}
+  <h1>Email successfully sent</h1>
+  <h2>Shared Post with titile:{{post.title}} by Email!!!</h2>
+{%else%}
+  <h1>Share Post with titile:{{post.title}} by Email!!!</h1>
+  <div align="center">
+    <form action="." method="POST">
+      <table class="table table-bordered" >
+      <tbody>
+      {% for field in form %}
+        <tr rowspan="2">
+        <td>
+          {{ field.errors }}
+          {{ field.label_tag}}
+        </td>
+        <td>
+           {{ field }}
+        </td><br>
+        </tr>
+
+      {% endfor %}
+      </tbody>
+      </table>
+      {%csrf_token%}
+
+
+      <input type="submit" class="btn btn-primary btn-lg" value="Send Mail"></div>
+    </form>
+{%endif%}
+{%endblock%}

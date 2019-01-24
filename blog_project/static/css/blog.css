@@ -1,0 +1,47 @@
+.content{
+  float:left;
+  width: 60%;
+  padding:0 0 0 30px;
+}
+.sidebar{
+  float:right;
+  width:30%;
+  padding:10px;
+  background: skyblue;
+  height: 100%;
+}
+h1{
+  text-align: center;
+  border-bottom: 1px solid #bbb;
+  padding: 0 0 10px 0;
+}
+#date{
+  color:blue;
+  font-size:12px;
+  font-style: italic;
+}
+body{
+
+/*  background: url(https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2019/01/5c375e9ec1657.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+a{
+    color:red;
+}
+.comment{
+  color:blue;
+  border-bottom: 1px solid #bbb;
+}
+#pcount{
+  font-size: 40px;
+  color: yellow;
+  font-weight: bold;
+}
+
+.table{
+  background-color: lightgreen;
+  border-collapse: collapse;
+}
